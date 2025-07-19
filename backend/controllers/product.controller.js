@@ -1,6 +1,6 @@
 import cloudinary from "../lib/cloudinary.js";
 import Product from "../models/product.model.js";
-import redis from "../lib/redis.js";
+import {redis} from "../lib/redis.js";
 import { deleteCloudinaryImage } from "../utils/cloudinary.utils.js";
 import { updateFeaturedProductsCache } from "../utils/redis.utils.js";
 
