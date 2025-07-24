@@ -139,3 +139,10 @@ export const token = async (req, res) => {
         res.status(500).json({ message: "Server Error in Token Controller", error: error.message });
     }
 };
+export const getProfile = async (req, res) => {
+	try {
+		res.json(req.user);
+	} catch (error) {
+		res.status(500).json({ message: "Server error", error: error.message });
+	}
+};
